@@ -58,5 +58,10 @@ end
 def over?
   won? || draw?
 end
-
+def winner
+  if won?
+    @board[combo[0]]
+  else
+    nil
+  end
 end
