@@ -60,7 +60,7 @@ def over?
 end
 def winner
   if won?
-    @board[combo[0]]
+    won?
   else
     nil
   end
