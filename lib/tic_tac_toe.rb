@@ -22,7 +22,11 @@ def move(index, token = "X")
   @board[index] = token
 end
 def position_taken?(index)
-  @board[index] == "X" || @board[index] == " O"
+  if @board[index] == "X" || @board[index] == " O"
+  true
+else
+  false
+end
 end
 
 
