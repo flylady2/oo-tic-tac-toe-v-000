@@ -60,7 +60,7 @@ def over?
 end
 def winner
   if won?
-    won?
+    won?[0]
   else
     nil
   end
