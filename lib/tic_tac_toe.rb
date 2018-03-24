@@ -30,6 +30,14 @@ end
 def turn_count
   @board.count{|token| token == "X" || token == "O"}
 end
+def current_player(board)
+  counter = turn_count(board)
+  if counter.even?
+    "X"
+  else
+    "O"
+  end
+end
   
 
 
